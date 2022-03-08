@@ -1,0 +1,40 @@
+{
+	"name": "vercel-gleam",
+	"version": "0.1.0",
+	"author": "McKayla Washburn <mckayla@hey.com>",
+	"description": "A Vercel runtime that allows you to write functions in Gleam",
+	"keywords": [],
+	"license": "MIT",
+	"homepage": "https://github.com/aslilac/vercel-gleam",
+	"repository": "https://github.com/aslilac/vercel-gleam",
+	"bugs": "https://github.com/aslilac/vercel-gleam/issues",
+	"type": "commonjs",
+	"main": "./build/index.js",
+	"files": [
+		"build/**"
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"@mckayla/prettier": "^1.0.1",
+		"@mckayla/tsconfig": "^1.0.2",
+		"@vercel/build-utils": "^2.14.0",
+		"@vercel/frameworks": "^0.2.0",
+		"@vercel/routing-utils": "^1.9.2",
+		"@types/glob": "^7.2.0",
+		"@types/jest": "^27.4.1",
+		"eslint": "^8.10.0",
+		"eslint-config-mckayla": "^1.0.4",
+		"prettier": "^2.5.1",
+		"jest": "^27.5.1",
+		"ts-jest": "^27.1.2",
+		"typescript": "^4.6.2"
+	},
+	"scripts": {
+		"build": "tsc -p tsconfig.json",
+		"fmt": "prettier --write .",
+		"lint": "eslint .",
+		"prepack": "npm run build -s",
+		"test": "jest",
+		"type-check": "tsc -p . --noEmit"
+	}
+}
