@@ -1,7 +1,7 @@
+import { serve } from "https://deno.land/std@0.128.0/http/server.ts";
+
 import { handler as hello } from "./build/dev/javascript/vercel_gleam_runtime/dist/hello.mjs";
 import { handler as puppiesList } from "./build/dev/javascript/vercel_gleam_runtime/dist/puppies/list.mjs";
-
-import { serve } from "https://deno.land/std@0.128.0/http/server.ts";
 
 await serve(
 	(req) => {
