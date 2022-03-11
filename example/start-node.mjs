@@ -1,7 +1,7 @@
 import * as http from "http";
 
-import { handler as hello } from "./build/dev/javascript/vercel_gleam_runtime/dist/hello.mjs";
-import { handler as puppiesList } from "./build/dev/javascript/vercel_gleam_runtime/dist/puppies/list.mjs";
+import { handler as hello } from "./build/dev/javascript/vercel_gleam_runtime/dist/api/hello.mjs";
+import { handler as puppiesList } from "./build/dev/javascript/vercel_gleam_runtime/dist/api/puppies/list.mjs";
 
 const doStuff = (req) => {
 	const url = new URL(req.url, "http://localhost:8000");

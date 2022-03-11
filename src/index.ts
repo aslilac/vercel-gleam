@@ -37,6 +37,7 @@ export function build(options: BuildOptions): Promise<BuildResult> {
 		output: new Lambda({
 			runtime: "provided.al2",
 			environment: {},
+			\
 			files: {},
 			handler: "",
 		}),

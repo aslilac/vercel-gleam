@@ -1,0 +1,7 @@
+{
+	"functions": {
+		"src/api/**/*.gleam": {
+			"runtime": "vercel-gleam@1.0.0"
+		}
+	}
+}

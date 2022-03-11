@@ -1,10 +1,9 @@
 name = "vercel_gleam_runtime"
-version = "0.1.0"
+version = "1.0.0"
 license = "MIT"
 description = "A Vercel runtime that allows you to write functions in Gleam"
 repository = { type = "github", user = "aslilac", repo = "vercel-gleam" }
 target = "javascript"
-# src_dir = "./api/"
 
 [dependencies]
 gleam_stdlib = "~> 0.20"
